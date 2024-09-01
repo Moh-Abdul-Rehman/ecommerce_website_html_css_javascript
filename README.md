@@ -10,11 +10,7 @@ This project is a fully responsive e-commerce website designed to offer a seamle
 - [Technology Stack](#technology-stack)
 - [How It Works](#how-it-works)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Features
 
@@ -51,8 +47,6 @@ This project is a fully responsive e-commerce website designed to offer a seamle
 - **JavaScript**: Adds interactivity and manages the shopping cart.
 - **Local Storage**: Saves cart data across sessions.
 - **JSON**: Manages product data efficiently.
-
-## How It Works
 
 ### Product Selection
 
