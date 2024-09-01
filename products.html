@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Js Ecomm Website</title>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="/signin.html">SIGN IN</a>
+            <a href="signup.html">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              src="./pictures/702.png"
+              alt="shop ease eCommerce logo"
+              class="logo"
+              width="80%"
+              height="20%"
+            />
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="/addToCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="fa-solid fa-cart-shopping"> 0 </i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+    
+    <!-- This is the hero section of the website -->
+    
+
+    <!-- This is the products section -->
+    <section class="section-extra-product">
+      <div class="container grid grid-three--cols">
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./pictures/laptop1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./pictures/mobile2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./pictures/headphone3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start our products section -->
+     <section class="section-products">
+      
+
+
+
+
+
+
+      <section class="container">
+        <div class="section-common--heading">
+          <h1>Check out Shop Ease</h1> 
+
+        </div>
+          
+        <div id="productContainer">
+
+             
+        </div>
+
+      </section>
+      
+     </section>
+
+
+      <!-- Start Product Template Section -->
+
+      <template id="productTemplate">
+         <div class="cards" id="cardValue">
+          <article class="information [card]">
+            <span class="category">
+
+
+            </span>
+
+          <div class="ImageContainer">
+            <img class="productImage" src="" alt="" />
+
+            </div>
+
+        <h2 class="productName"></h2>
+
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+        </div>
+         
+         <p class="productDescription"></p>
+          
+
+         <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+
+         </div>
+
+
+         <div class="productStockElement">
+          <p class="productProperty">Total Stocks Available:  </p>
+          <p class="productStock"></p>
+
+         </div>
+
+         <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+         </div>
+
+         <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping">Add to Cart</i>
+
+
+         </button>
+          
+          
+
+
+          </article>
+
+
+         </div>
+      </template>
+
+
+
+
+
+
+
+    <section class="section-policy">
+      <div class="container grid grid-four--cols">
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>worldwide shipping</p>
+            <p>order above $100</p>
+          </div>
+
+        
+      </div>
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    <!-- Start Footer Section: -->
+
+    <footer class="section-footer">
+      <script src="footer.js"></script>
+    </footer>
+
+
+     
+
+
+
+     <script type="module" src="main.js"></script>
+  </body>
+</html>

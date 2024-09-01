@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="/pictures/iconnew1.png" type="image/x-icon">
+    <title>Shop Ease</title>
+  </head>
+  <body>
+
+    <div class="preloader">
+      <img src="pictures/iconnew1.png" alt="Logo">
+      <p>Welcome to our Website</p> <!-- Add this line -->
+      <!-- Replace with your logo's path -->
+  </div>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="/signin.html">SIGN IN</a>
+            <a href="/signup.html">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              src="./pictures/702.png"
+              alt="shop ease ecommerce logo"
+              class="logo"
+              width="80%"
+              height="20%"
+            />
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="/addToCart.html"
+                
+                id="cartValue"
+              >
+                <i class="fa-solid fa-cart-shopping">0</i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+    
+    <!-- This is the hero section of the website -->
+    <main>
+      <section class="section-hero">
+        <div class="container grid grid-two--cols">
+          <div class="section-hero--content">
+            <p class="hero-subheading">Explore the Latest in Tech Industries</p>
+            <h1 class="hero-heading">
+              Your Destination for Cutting-Edge Gadgets!
+            </h1>
+            <p class="hero-para">
+              Unleash your tech potential at Shop Ease. Discover a world of cutting-edge gadgets, enjoy a seamless shopping experience, and benefit from competitive prices. Explore now and find the perfect tech companion to elevate your lifestyle.
+
+
+            </p>
+            <div class="hero-btn">
+              <a href="products.html" class="btn">Explore Our Products</a>
+            </div>
+          </div>
+
+          <div
+            class="section-hero-image"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <figure>
+              <img
+                src="./pictures/tech.png"
+                alt="coding languages using html css js"
+              />
+            </figure>
+          </div>
+
+          <!-- Additional content could go here -->
+        </div>
+        <div class="custom-shape-divider-bottom-1723058892">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <!-- This is the products section -->
+    <section class="section-extra-product">
+      <div class="container grid grid-three--cols">
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./pictures/laptop1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./pictures/mobile2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./pictures/headphone3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start our products section -->
+     <section class="section-products">
+      
+      <section class="container">
+        <div class="section-common--heading">
+          <h1>Check out Shop with Ease</h1> 
+
+        </div>
+          
+        <div id="productContainer">
+
+             
+        </div>
+
+      </section>
+      
+     </section>
+
+
+      <!-- Start Product Template Section -->
+
+      <template id="productTemplate">
+         <div class="cards" id="cardValue">
+          <article class="information [card]">
+            <span class="category">
+
+
+            </span>
+
+          <div class="ImageContainer">
+            <img class="productImage" src="" alt="" />
+
+            </div>
+
+        <h2 class="productName"></h2>
+
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+        </div>
+         
+         <p class="productDescription"></p>
+          
+
+         <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+
+         </div>
+
+
+         <div class="productStockElement">
+          <p class="productProperty">Total Stocks Available:  </p>
+          <p class="productStock"></p>
+
+         </div>
+
+         <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+         </div>
+
+         <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping">Add to Cart</i>
+
+
+         </button>
+          
+          
+
+
+          </article>
+
+
+         </div>
+      </template>
+
+
+
+
+
+
+
+    <section class="section-policy">
+      <div class="container grid grid-four--cols">
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>worldwide shipping</p>
+            <p>order above $100</p>
+          </div>
+
+        
+      </div>
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>worldwide shipping</p>
+          <p>order above $100</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Why Choose Us Section: -->
+
+    <section class="section-why--choose">
+      <div class="container">
+        <h2 class="section-common--heading">Why Choose Shop Ease</h2>
+        <p class="section-common--subheading">
+          Shop with ease at Shop Ease. Enjoy a hassle-free shopping experience with our user-friendly website, fast shipping, and exceptional customer support.
+        </p>
+      </div>
+      
+
+
+      <div class="container grid grid-three--cols">
+        <div class="choose-left-div text-align--right">
+          <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="0">
+            <p class="common-text--highlight">1</p>
+            <h3 class="section-common--title">Wide Selection</h3>
+            <p>
+              Explore a vast array of tech gadgets, from cutting-edge smartphones to smart home essentials. Find the perfect devices to elevate your lifestyle and meet your tech needs.
+            </p>
+          </div>
+        
+
+      <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="300">
+        <p class="common-text--highlight">2</p>
+        <h3 class="section-common--title">Quality   
+       Assurance</h3>
+        <p>Every product undergoes rigorous quality checks, ensuring reliability and performance.Shop with confidence knowing you're getting the best.</p>
+      </div>
+
+      <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="600">
+        <p class="common-text--highlight">3</p>
+        <h3 class="section-common--title">Competitive   
+       Prices</h3>
+        <p>
+          Enjoy unbeatable value on top-tier gadgets without compromising on quality. Get more for your money with our competitive pricing.
+        </p>
+      </div>
+    </div>
+  
+
+      <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
+        <figure>
+          <img src="./pictures/why choose us.png" alt="Shop ease technical home page" />
+        </figure>
+      </div>
+      
+
+    <div class="choose-right-class">
+      <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="900">
+        <p class="common-text--highlight">4</p>
+        <h3 class="section-common--title">24/7 Support</h3>
+        <p>
+          Our dedicated customer support team is always available to assist you. Get expert help and quick resolutions for any queries or issues.
+
+
+        </p>
+      </div>
+
+
+
+      <div class="why-choose--div text-align--left" data-aos="zoom-in-up" data-aos-delay="300">
+        <p class="common-text--highlight">5</p>
+        <h3 class="section-common--title">Convenient   
+       Shopping</h3>
+        <p>Experience effortless online shopping with our user-friendly website. Enjoy a seamless checkout process and secure payment options.</p>
+      </div>
+
+
+
+      <div class="why-choose--div text-align--left" data-aos="zoom-in-up" data-aos-delay="600">
+        <p class="common-text--highlight">6</p>
+        <h3 class="section-common--title">Excellent   
+       Service</h3>
+        <p>
+          Benefit from our exceptional customer service, from prompt inquiries to efficient deliveries. We prioritize your satisfaction every step of the way.
+        </p>
+      </div>
+      
+
+    </div>
+  </div>
+    
+
+
+    </section>
+
+
+
+    <!-- Start Footer Section: -->
+
+    <footer class="section-footer">
+      <div class="footer-container container">
+        <div class="content_1">
+          <img src="/pictures/710.png" alt="logo">
+          <p>Welcome to Shop Ease, your ultimate destination for cutting-edge gadgets!</p>
+          <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
+        </div>
+
+
+        <div class="content_2">
+          <h4>SHOPPING</h4>
+          <a href="#">Computer Store</a>
+          <a href="#">Laptop Store</a>
+          <a href="#">Accessories</a>
+          <a href="#">Sales & Discount</a>
+        </div>
+        
+        <div class="content_3">
+          <h4>Experience</h4>
+          <a href="./contact.html">Contact Us</a>
+          <a href="" target="_blank">Payment Method</a>
+          <a href="" target="_blank">Delivery</a>
+          <a href="" target="_blank">Return and Exchange</a>   
+        
+        </div>
+
+        <div class="content_4">
+          <h4>NEWSLETTER</h4>
+          <p>Be the first to know about new<br>arrivals, sales & promos!</p>
+          <div class="f-mail">
+            <input type="email" placeholder="Your Email">
+            <i class="bx bx-envelope"></i>
+          </div>
+          <hr>
+        </div>
+        </div>
+        
+        <div class="f-design">
+          <div class="f-design-txt">
+            <p>Design and Code by Moh Abdul Rehman Mustafa</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </footer>
+
+
+     
+
+
+
+     <script type="module" src="main.js"></script>
+  </body>
+</html>
